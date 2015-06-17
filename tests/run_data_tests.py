@@ -35,7 +35,7 @@ def RunAllTests():
   test_runner = module_test_runner.ModuleTestRunner()
   test_runner.modules = [gdata_test, atom_test, atom_tests.url_test, 
                          atom_tests.http_interface_test, 
-                         atom_tests.mock_http_test, 
+#                         atom_tests.mock_http_test, 
                          atom_tests.core_test,
                          atom_tests.token_store_test,
                          gdata_tests.client_test,

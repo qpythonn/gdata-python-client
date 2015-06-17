@@ -37,7 +37,8 @@ class MockHttpClientUnitTest(unittest.TestCase):
     response = self.client.request('GET', 'http://example.com/hooray')
 
     self.assertEquals(len(self.client.recordings), 1)
-    self.assertEquals(response.status, 200)
+#    self.assertEquals(False,False) # faco +
+    self.assertEquals(response.status, 200) # faco 
     self.assertEquals(response.read(), 'Hooray!')
 
   def testRecordResponse(self):
@@ -47,7 +48,9 @@ class MockHttpClientUnitTest(unittest.TestCase):
         'http://www.google.com/base/feeds/snippets?max-results=1')
     live_response_body = live_response.read()
     self.assertEquals(live_response.status, 200)
+#    self.assertEquals(200, 200) # faco
     self.assertEquals(live_response_body.startswith('<?xml'), True)
+#    self.assertEquals(True, True) # faco
 
     # Requery for the now canned data.
     self.client.real_client = None
