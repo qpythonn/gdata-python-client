@@ -16,3 +16,7 @@
 
   ElementTree - For XML parsing, download here: 
 http://effbot.org/zone/element-index.htm
+
+
+to push on my fork use:
+"git push mine" 
